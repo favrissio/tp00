@@ -122,6 +122,7 @@ void paquete(int conexion)
 
 	// ¡No te olvides de liberar las líneas y el paquete antes de regresar!
 	free(leido);
+	eliminar_paquete(paquete);
 }
 
 void terminar_programa(int conexion, t_log* logger, t_config* config)
